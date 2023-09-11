@@ -185,9 +185,7 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
   <script>
-<!-- Initialize Swiper without the autoHeight parameter -->
 var swiper = new Swiper(".mySwiper", {
   direction: "vertical",
   slidesPerView: "auto",
@@ -198,13 +196,12 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true,
 });
 
-// Function to update Swiper's height
+
 function updateSwiperHeight() {
-  swiper.update(); // Update Swiper
-  swiper.updateAutoHeight(); // Update Swiper's auto height
+  swiper.update();
+  swiper.updateAutoHeight();
 }
 
-// Periodically check and update Swiper's height (every 1 second in this example)
 setInterval(updateSwiperHeight, 1000);
 
   </script>
