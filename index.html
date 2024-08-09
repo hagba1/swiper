@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Pharma</title>
+    
+    <!-- hatem-favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favIcon.png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.cdnfonts.com/css/nrt-reg" rel="stylesheet">
+
+    <!-- link to rtl css -->
+    <link rel="stylesheet" href="./style/rtl.css">
+
+</head>
+<body>
+    <div id="splash-screen">
+        <svg width="400" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <filter id="displacementFilter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="50" xChannelSelector="R" yChannelSelector="G" />
+                </filter>
+                <mask id="circleMask">
+                    <circle cx="200" cy="200" r="0" fill="white" class="displacement" />
+                </mask>
+            </defs>
+            <image xlink:href="./img/sweet logo.png" width="400" height="400" mask="url(#circleMask)" />
+        </svg>          
+        <!-- <h1>Welcome to My Website</h1> -->
+    </div>
+    <div id="main-content" style="display: none;">
+        <div class="container">
+            <header class="header">
+                <div class="header-bg">
+                    <div class="languages">
+                        <div class="select-language">
+                            <img src="./img/krd.webp" alt="Select Language">
+                        </div>
+                        <div class="multi-language">
+                            <a href="./en.html"><img src="./img/en flag.png" alt="Kurdish"></a>
+                            <a href="./AR.html"><img src="./img/ar flag.jpg" alt="Arabic"></a>
+                        </div>
+                    </div>
+                    <div class="top-menu">
+                        <div class="select-item">
+                            <i class="fa-solid fa-bars active"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="items">
+                            <a href="./sweet logo.png" download="barcode"><i class="fa-solid fa-barcode"></i></a>
+                            <div id="copyButton" alt=""><i class="fa-solid fa-copy"></i></div>
+                            <span class="notification" id="notification">URL copied to clipboard!</span>
+                            <div class="share-button" id="shareButton" alt=""><i class="fa-solid fa-share"></i></div>
+                        </div>
+                    </div>
+                    <div class="header-bg-img">
+                        <img src="./img/Pharmacy-background.jpg" alt="">
+                        <div class="header-bg-opacity"></div>
+                    </div>
+                    <div class="title-header-box">
+                        <div class="main-logo">
+                            <img src="./img/sweet logo.png" alt="">
+                            <!-- <div class="created-logo"></div> -->
+                        </div>
+                        <!-- <div class="main-name"><span>Sweet Pharma</span><span>Pharmacy</span></div> -->
+                        <div class="main-slogan"><p>کوالێتی - هەرزانی - ئەزموون</p></div>
+                    </div>
+                </div>
+            </header>
+            <div class="body-content">
+                <div>
+                    <div class="sweet-runakiZanko-box">
+                        <div class="box-header">
+                            <div class="box-header-logo"><img src="./img/runaki..jpg" alt=""></div>
+                            <div class="box-header-name"><span>ڕووناکی زانکۆ</span></div>
+                        </div>
+                        <div class="box-info">
+                            <div class="item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <p class="text-title">ژمارە مۆبایل</p>
+                                    <a href="tel:+9647505755859" class="title-info">+964 750 575 5859</a>
+                                    <a href="tel:+9647701366220" class="title-info">+964 770 136 6220</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <p class="text-title">ئیمێڵ</p>
+                                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=your-email@example.com&su=Subject&body=Body%20Text" target="_blank" class="title-info">runaky_zanko@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-vial"></i>
+                                <div>
+                                    <p class="text-title">تاقیگە</p>
+                                    <span class="title-info">تاقیگەی ڕووناکی زانکۆ</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-lock-open"></i>
+                                <div>
+                                    <p class="text-title">کاتی کرانەوە</p>
+                                    <span class="title-info">08:00 AM - 03:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <p class="text-title">ناونیشان</p>
+                                    <span class="title-info">هەولێر - بازاڕی گەڕەکی 99 زانکۆ</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.4975067398286!2d44.033231276358336!3d36.15444640383336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4007250042fdfe65%3A0x126092c1fcf6fb60!2zUnVuYWt5IFphbmtvIFBoYXJtYWN5IF8g2K_bldix2YXYp9mG2K7Yp9mG25XbjCDaldmI2YjZhtin2qnbjCDYstin2YbaqduG!5e0!3m2!1sen!2siq!4v1722070378324!5m2!1sen!2siq" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sweet-pharma-box">
+                        <div class="box-header">
+                            <div class="box-header-logo"><img src="./img/sweet.jpg" alt=""></div>
+                            <div class="box-header-name"><span>سویت فارما</span></div>
+                        </div>
+                        <div class="box-info">
+                            <div class="item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <p class="text-title">ژمارە مۆبایل</p>
+                                    <a href="tel:+9647502458288" class="title-info">+964 750 245 8288</a>
+                                    <a href="tel:+9647701366220" class="title-info">+964 770 136 6220</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <p class="text-title">ئیمێڵ</p>
+                                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=your-email@example.com&su=Subject&body=Body%20Text" target="_blank" class="title-info">sweet_pharma@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-vial"></i>
+                                <div>
+                                    <p class="text-title">تاقیگە</p>
+                                    <span class="title-info">تاقیگەی سویت فارما</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-lock-open"></i>
+                                <div>
+                                    <p class="text-title">کاتی کرانەوە</p>
+                                    <span class="title-info">08:00 AM - 01:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <p class="text-title">ناونیشان</p>
+                                    <span class="title-info">هەولێر - 100م - زانکۆ شەقامی ئەحمەدی خانی</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.519013246413!2d44.023941876358634!3d36.1539229038625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4007252f5c6c362d%3A0x4cc7579d6531435f!2sSweet%20pharma%20pharmacy!5e0!3m2!1sen!2siq!4v1722070322929!5m2!1sen!2siq" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sweet-maly-box">
+                        <div class="box-header">
+                            <div class="box-header-logo"><img src="./img/mali.jpg" alt=""></div>
+                            <div class="box-header-name"><span>دەرمانخانەی مەلی</span></div>
+                        </div>
+                        <div class="box-info">
+                            <div class="item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <p class="text-title">ژمارە مۆبایل</p>
+                                    <a href="tel:+9647704455363" class="title-info">+964 770 445 5363</a>
+                                    <a href="tel:+9647701366220" class="title-info">+964 770 136 6220</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <p class="text-title">ئیمێڵ</p>
+                                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=your-email@example.com&su=Subject&body=Body%20Text" target="_blank" class="title-info">maly_pharmacy@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-vial"></i>
+                                <div>
+                                    <p class="text-title">تاقیگە</p>
+                                    <span class="title-info">تاقیگەی نییە</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-lock-open"></i>
+                                <div>
+                                    <p class="text-title">کاتی کرانەوە</p>
+                                    <span class="title-info">09:00 AM - 01:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <p class="text-title">ناونیشان</p>
+                                    <span class="title-info">هەولێر - جووت سایدی 18 شوبات بەرامبەر مزگەوتی عزالدین صفار</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.628258860267!2d44.0357203763584!3d36.15126360401013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400725001ca7f0db%3A0xdf029f6bba760f7c!2zTWFseSBQaGFybWFjeSAtINiv25XYsdmF2KfZhtiu2KfZhtuV24wg2YXbldmE24w!5e0!3m2!1sen!2siq!4v1722070438747!5m2!1sen!2siq" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blood-withdraw">
+                <div class="withdraw-info">
+                    <ul>
+                        <div>خزمەتگوزاری تاقیگە و نۆرینگە لە ماڵەوە</div>
+                        <li>خوێن وەرگرتنێکی ئاسوودەتر لە ماڵەوە</li>
+                        <li>ستافێکی پیشەیی و بە ئەزموون</li>
+                        <li>دڵنیابوون لە خزمەتگوزاری متمانەپێکراو و سەلامەت و لە کاتی خۆیدا</li>
+                        <a href="tel:+964 750 503 1001">+964 750 503 1001<i class="fa-solid fa-phone-flip"></i></a>
+                    </ul>
+                </div>
+                <div class="withdraw-img"><img src="./img/blood withdraw1.jpg" alt=""><img src="./img/zakht1.jpg" alt=""></div>
+            </div>
+            <div class="social-media">
+                <div>
+                    <a href="https://www.facebook.com/share/FBJvJLSir4dcmMow/?mibextid=LQQJ4d" class="social-item faone"><i class="fa-brands fa-facebook"></i><span>فەیسبووک</span></a>
+                    <a href="https://www.instagram.com/sweet_pharma?igsh=MW4za2RhYXpydGpoag%3D%3D&utm_source=qr" class="social-item fatwo"><i class="fa-brands fa-instagram"></i><span>ئینستگرام</span></a>
+                    <a href="https://www.tiktok.com/@sweet_pharma?_t=8oakvHSOCeI&_r=1" class="social-item fathree"><i class="fa-brands fa-tiktok"></i><span>تیکتۆک</span></a>
+                    <a href="https://snapchat.com/t/yvYnX9ig" class="social-item fafour"><i class="fa-brands fa-snapchat"></i><span>سناپچات</span></a>
+                    <a href="tel:+9647502458288" class="social-item fafive"><i class="fa-solid fa-phone-flip"></i><span>ژمارە مۆبایل</span></a>
+                </div>
+            </div>
+            <div class="description"><div><p>پێشکەشکردنی چاودێری دەرمانی کوالیتی لە سەرانسەری هەولێر، زنجیرە دەرمانخانەکانمان کۆمەڵێک دەرمانی بەرفراوان، بەرهەمی تەندروستی و تەندروستی، و خزمەتگوزاری پیشەیی پێشکەش دەکات. بە چەندین شوێن لە سەرتاسەری شارەکەدا، ئێمە پابەندین بە دەستگەیشتنێکی گونجاو، ئامۆژگاری پسپۆڕان، و خزمەتگوزاری ناوازەی کڕیاران. بۆ هەموو پێداویستیەکانی چاودێری تەندروستی متمانەمان پێ بکە.</p></div></div>
+            <footer class="footer"><div><span>دروستکراوە لەلایەن  | <a href="www.absurchi.com" target="_blank"> Hagba</a></span></div></footer>
+        </div>
+    </div>
+
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+<!-- link to javascript -->
+<script src="./script.js"></script>
+</body>
+</html>
